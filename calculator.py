@@ -2,7 +2,7 @@
 
 
 def add(first: float, second: float) -> float:
-    return first + second
+    return first - second
 
 
 def subtract(first: float, second: float) -> float:
