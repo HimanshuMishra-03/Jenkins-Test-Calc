@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "C:\\Users\\Himanshu Mishra\\AppData\\Local\\Programs\\Python\\Python310;C:\\Users\\Himanshu Mishra\\AppData\\Local\\Programs\\Python\\Python310\\Scripts;${env.PATH}"
+    }
+
     triggers {
         pollSCM('H/2 * * * *')
     }
